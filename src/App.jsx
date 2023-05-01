@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import "./App.css";
+import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Login from "./pages/Login";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -33,8 +33,6 @@ const App = () => {
     };
     getUser();
   }, []);
-
-  console.log(user);
 
   return (
     <BrowserRouter>
